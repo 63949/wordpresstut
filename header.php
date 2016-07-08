@@ -15,8 +15,8 @@
 	<h1><?php bloginfo('name' ); ?></h1>
 	<h5><?php bloginfo('description' ); ?></h5>
 	<nav class="site-nav">
-		<ul>
-			<?php wp_nav_menu(); ?> <!-- 这里生成的是页面列表菜单 -->
-		</ul>
+		<?php 
+		$args = array('theme_location' => 'primary' ); ?>
+		<?php wp_nav_menu($args); ?> <!-- 这里生成的自定义列表菜单 -->
 	</nav>
 </header><!-- site-header -->
