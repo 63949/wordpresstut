@@ -8,6 +8,7 @@ if (have_posts()):
 		the_post();
 ?>
 		<article class="page">
+			<?php wp_list_pages( );?> 
 			<h2><a href="<?php the_permalink()?>"><?php the_title() ?></a></h2>
 			<!-- 信息窗口 -->
 			<div class="info-box">
