@@ -34,7 +34,12 @@ div.container{
 	border-top: 2px solid #999;
 }
 
+/*常用的还有header footer等，其他以后再添加*/
 article.yyy{
 
 	border-bottom: 2px dotted #bbb;
+}
+
+article.yyy:last-of-type{
+	border-bottom: none;
 }
