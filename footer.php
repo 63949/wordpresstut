@@ -1,9 +1,8 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<title>无标题</title>
-</head>
-<body>
+<footer class="site-footer">
+	<p><a href="<?php home_url(); ?>"><?php bloginfo('name' ); ?></a> - &copy; <?php echo date("Y"); ?></p>
+
+</footer>
+<?php wp_footer(); ?>
 
 </body>
 </html>
