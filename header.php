@@ -16,11 +16,7 @@
 	<h5><?php bloginfo('description' ); ?></h5>
 	<nav class="site-nav">
 		<ul>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">About Us</a></li>
+			<?php wp_nav_menu(); ?> <!-- 这里生成的是页面列表菜单 -->
 		</ul>
 	</nav>
 </header><!-- site-header -->
