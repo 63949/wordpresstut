@@ -14,4 +14,21 @@ register_nav_menus(array(
 	) 
 );
 
+function v7v3_get_avatar($avatar) { 
+    $avatar = str_replace(array("www.gravatar.com","0.gravatar.com","1.gravatar.com","2.gravatar.com"), 
+"gravatar.duoshuo.com",$avatar); 
+    return $avatar; 
+} 
+add_filter( 'get_avatar', 'v7v3_get_avatar', 10, 3 );
+// 解决访问gravatar不了的问题
+
+// 取得上层的页面id
+function get_top_ancestor_id(){
+	global $post;
+	if ($post->post_parent) {
+		$ancestors = get_post_ancestors( $post->ID );
+		return $ancestors[0];
+	}
+	return $post->ID;
+}
  ?>

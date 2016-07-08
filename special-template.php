@@ -8,7 +8,11 @@ if (have_posts()):
 		the_post();
 ?>
 		<article class="page">
-			<?php wp_list_pages( );?> 
+			<?php 
+				$args = array('child_of' => get_top_ancestor_id(),
+				'title_li' => '' );
+			?>
+			<?php wp_list_pages( $args);?> 
 			<h2><a href="<?php the_permalink()?>"><?php the_title() ?></a></h2>
 			<!-- 信息窗口 -->
 			<div class="info-box">
