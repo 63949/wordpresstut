@@ -9,6 +9,12 @@ if (have_posts()):
 ?>
 		<article class="page">
 			<h2><a href="<?php the_permalink()?>"><?php the_title() ?></a></h2>
+			<!-- 信息窗口 -->
+			<div class="info-box">
+				<h4>标题</h4>
+				<p>内容是东风风神</p>
+			</div>
+			<!-- 信息窗口 -->
 			<h2><?php the_content( )?></h2>
 		</article>
 <?php		
