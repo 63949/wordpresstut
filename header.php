@@ -4,6 +4,7 @@
 <meta charset="<?php bloginfo('charset' ); ?>"></meta>
 <meta name="viewport" content='width=device-width'>
 	<title><?php bloginfo('name' ); ?></title>
+	<!-- 头部的css等，添加头部网页管理条等的CSS控制 -->
 	<?php wp_head(); ?>  
 	<!-- 头部的css等，添加头部网页管理条等的CSS控制 -->
 </head>
