@@ -14,4 +14,13 @@
 <header class="site-header">
 	<h1><?php bloginfo('name' ); ?></h1>
 	<h5><?php bloginfo('description' ); ?></h5>
+	<nav class="site-nav">
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+	</nav>
 </header><!-- site-header -->
