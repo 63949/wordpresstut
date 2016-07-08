@@ -9,6 +9,7 @@
 	<!-- 头部的css等，添加头部网页管理条等的CSS控制 -->
 </head>
 <body <?php body_class( ); ?>>
+	<div class="container">
 <!-- site-header -->
 <header class="site-header">
 	<h1><?php bloginfo('name' ); ?></h1>

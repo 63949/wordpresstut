@@ -16,3 +16,9 @@ p{
 	line-height: 1.65em;
 }
 
+div.container{
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
