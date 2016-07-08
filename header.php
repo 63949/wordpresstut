@@ -14,6 +14,9 @@
 <header class="site-header">
 	<h1><?php bloginfo('name' ); ?></h1>
 	<h5><?php bloginfo('description' ); ?></h5>
+	<?php if (is_page(9 )) {
+		echo "- 欢迎来搞。";
+	} ?>
 	<nav class="site-nav">
 		<?php 
 		$args = array('theme_location' => 'primary' ); ?>
