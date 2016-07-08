@@ -96,3 +96,8 @@ article.yyy:last-of-type{
 	padding-right: 10px;
 	border-right: 1px dotted #BBB;
 }
+
+/*页面布局*/
+article.page h2{
+	font-size: 9px;
+}
