@@ -6,7 +6,17 @@ if (have_posts()):
 ?>
 		<article class="page">
 			<!-- <h2><a href="<?php the_permalink()?>"><?php the_title() ?></a></h2> -->
-			<h2><?php the_content( )?></h2>
+			<!-- column-container -->
+			<div class="column-container clearfix">
+				<div class="title-column">
+					<h2><?php the_title( ); ?></h2>
+				</div>
+				<div class="text-column">
+					<h2><?php the_content( )?></h2>
+				</div>
+			</div>
+			<!-- column-container -->
+			
 		</article>
 <?php		
 	endwhile;

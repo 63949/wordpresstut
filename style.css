@@ -101,3 +101,15 @@ article.yyy:last-of-type{
 article.page h2{
 	font-size: 9px;
 }
+
+/*两列页面布局*/
+div.title-column{
+	width: 30%;
+	float: left;
+}
+
+
+div.text-column{
+	width: 70%;
+	float: right;
+}
