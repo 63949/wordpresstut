@@ -4,17 +4,22 @@ if (have_posts()):
 	?>
 <h2><?php 
 if (is_category( )) {
-	echo "这是类别专辑";
+	single_cat_title( );	
 }elseif (is_tag( )) {
-	echo "这是标签专辑";
+	single_tag_title( );
 }elseif (is_author( )) {
-	echo "这是作者专辑";
+	the_post();// 取一个文章
+	echo "作者专辑：".get_the_author(  );
+	rewind_posts();//重置循环
 }elseif (is_day()) {
 	echo "这是按天分的专辑";
+	echo get_the_date( );
 }elseif (is_month()) {
 	echo "这是按月分的专辑";
+	echo get_the_date('F Y');
 }elseif (is_year()) {
 	echo "这是按年分的专辑";
+	echo get_the_date('Y' );
 }else{
 	echo "专辑";
 }
@@ -39,7 +44,8 @@ if (is_category( )) {
 				 ?>
 
 			</p>
-			<h2><?php the_content( )?></h2>
+			<!-- <h2><?php the_content( )?></h2> -->
+			<h2><?php the_excerpt()?></h2>
 		</article>
 <?php		
 	endwhile;
