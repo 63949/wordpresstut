@@ -20,7 +20,8 @@ if (have_posts()):
 				 ?>
 
 			</p>
-			<h2><?php the_content( )?></h2>
+			<h2><?php the_content('继续阅读 &raquo;')?></h2>
+			<!-- 要显示“更多”标记需要在后台文章编辑中插入 more标签 -->
 		</article>
 <?php		
 	endwhile;
