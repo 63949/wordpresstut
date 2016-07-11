@@ -14,6 +14,31 @@ register_nav_menus(array(
 	) 
 );
 
+// 定义摘要内容字数 ,只对 more标签生效对 自定义摘要不生效
+function custom_excerpt_length()
+{
+	return 5;
+}
+add_filter('excerpt_length','custom_excerpt_length' );
+
+// 网上找的没有验证
+// function new_excerpt_more($more) {
+// return '';
+// }
+// add_filter('excerpt_more', 'new_excerpt_more');
+// function excerpt_read_more_link($output) {
+
+// global $post;
+
+// //$output = strip_tags($output);
+// $output = mb_substr($output,0, 200); //此处的200大于75是没有用的 最多75 具体机制俺没细看
+
+// return $output;
+// }
+// add_filter('the_excerpt', 'excerpt_read_more_link');
+
+// 网上找的没有验证
+
 function v7v3_get_avatar($avatar) { 
     $avatar = str_replace(array("www.gravatar.com","0.gravatar.com","1.gravatar.com","2.gravatar.com"), 
 "gravatar.duoshuo.com",$avatar); 
@@ -37,4 +62,11 @@ function has_children(){
 	$pages = get_pages('child_of='.$post->ID );
 	return count($pages);
 }
+
+
+
+
+
  ?>
+
+

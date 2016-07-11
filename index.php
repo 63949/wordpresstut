@@ -20,12 +20,24 @@ if (have_posts()):
 				 ?>
 
 			</p>
-			<h2>
+			<!-- 视频有个错 -->
+			<?php if (get_the_excerpt( )) {
+				?>
+				<p>
+				<?php echo get_the_excerpt( ); ?>
+				</p>
+				<p>
+				<a href="<?php the_permalink(); ?>">继续阅读&raquo;</a>
+			</p>
+			<?php
+			}else {
+				echo get_the_content( );
+			} ?>
+				<h2>
 				<?php echo get_the_excerpt( ); ?>
 				</h2>
 				<p>
 				<a href="<?php the_permalink(); ?>">继续阅读&raquo;</a>
-			</p>
 			<!-- 要显示“更多”标记需要在后台文章编辑中插入 more标签 -->
 		</article>
 <?php		
